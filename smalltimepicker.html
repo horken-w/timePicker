@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<style>
+	body{
+		width: 80%;
+		position: relative;
+	}
+	  #timepicker{
+	  	width: 20%;
+	  	margin: 30px 40%;
+	  	margin-bottom: 0;
+	  	position: absolute;
+	  }
+	  .timepicker_wrap{
+	  	top: 60px;
+	  	left: 39%;
+		display: none;
+		position: absolute;
+		background: hsl(0, 0%, 100%);
+	  	border-radius: 5px;
+	  }
+	  .hour, .min, .meridian, .sec{
+	  	float: left;
+	  	width: 60px;
+	  	margin: 0 10px;
+	  }
+	  .btn{
+	  	background: url(arrow.png) no-repeat;
+	  	cursor: pointer;
+	  	padding: 18px;
+	  	border: 3px dotted hsl(120, 40%, 80%);
+	  	width: 28%;
+	  	margin: auto;
+	  	border-radius: 5px;
+	  }
+	  .prev{
+	  	background-position: 50% -50%;
+	  }
+	  .next{
+	  	background-position: 50% 150%;
+	  }
+	  .ti_tx{
+	  	margin: 10px 0;
+	  	width: 100%;
+	  	text-align: center;
+	  }
+	  .in_txt{
+	  	border-radius: 10px;
+	  	width: 70%;
+	  	float: none;
+	  	text-align: center;
+	  	padding-bottom: 8px;
+	  	border: 2px solid hsl(0, 0%, 0%);
+	  	font-family: georgia, helvetica, arial;
+	  	font-weight: 700;
+	  	font-size: 1.5em;
+	  }
+	</style>
+  </head>
+  <body>
+    <input type="text" id="timepicker" name="open" readonly>
+	<script src="https://dl.dropboxusercontent.com/u/50502234/jquery.min.js"></script>
+	<script src="timepicker/pickerjs.js"></script>
+  </body>
+</html>
