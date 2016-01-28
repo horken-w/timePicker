@@ -75,7 +75,7 @@ function addZero(i, hours) {
 function setInit(inputbox){
     var $area=$(inputbox[0].nextElementSibling).find('.in_txt');
     var date=new Date();
-    var list=[addZero(date.getHours(), true), addZero(date.getMinutes()), addZero(date.getSeconds())];
+    var list=[addZero(date.getHours(), true), addZero(date.getMinutes()), addZero(date.getSeconds()), tz];
     if(inputbox.val().length===0){
         for(var i=0; i<$area.length; i++)	$($area[i]).val(list[i]);
         setValue(inputbox, $area);
