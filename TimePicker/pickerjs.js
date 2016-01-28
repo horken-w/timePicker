@@ -1,4 +1,4 @@
-var tz='AM', $inputbox=$('.reservationTime');
+var tz='AM', $inputbox=$('.timepicker');
 
 var setTimearea=function(meridian){
     var $div=$('<div/>'), $input=$('<input type="text"/>');
