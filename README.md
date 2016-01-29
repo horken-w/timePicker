@@ -3,11 +3,11 @@ Simple TimpePicker Plugin
 
 ### How to?
 
-Write your Input DOM with an ID #timepicker like so:
+Write your Input DOM with class .timepicker like so:
 
 ```html
   <label class="col-md-2 control-label" ><font color="red">*</font>Wake Up Time :?</a></label>
-  <input class="form-control space" type="text" id="timepicker" name="timepicker" readonly> // input box here
+  <input class="form-control space" type="text" class="timepicker" name="timepicker" readonly> // input box here
   <br/>
   //import timepicker after Jquery Libary
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
@@ -28,6 +28,7 @@ I will show the differences follow:<br/>
 ![File Input Screenshot](http://w1.loxa.edu.tw/xxxeee/timepicker.jpg)
 
 
-
+###Update: 
+2016/01/29 Support multi-Inputbox select
 
 Copyright © 2016 Horken Wong | BSD(WTFPL) & MIT license
