@@ -1,4 +1,4 @@
-Simple TimpePicker Plugin
+TimpePicker Plugin for jQuery
 ========
 
 ### How to?
