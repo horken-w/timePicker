@@ -31,4 +31,4 @@ I will show the differences follow:<br/>
 ###Update: 
 2016/01/29 Support multi-Inputbox select
 
-Copyright © 2016 Horken Wong | BSD(WTFPL) & MIT license
+Copyright © 2016 Horken Wong | WTFPL & MIT license
