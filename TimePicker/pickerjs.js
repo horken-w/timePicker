@@ -107,7 +107,7 @@ function closeIt() {
     $tab.stop().fadeOut(1000);
 }
 
-window.onLoad=setTimearea(true); //show merdian or not; Empty to hide merdian select
+window.onLoad=setTimearea(false); //show merdian or not; Empty to hide merdian select
 
 !function (){
     'use strict';
@@ -122,7 +122,17 @@ window.onLoad=setTimearea(true); //show merdian or not; Empty to hide merdian se
         var _this=e.target;
         setTimeout(function(){
             var focused_element = $(document.activeElement);
-            (!focused_element.is(':input') && !isSetTimeArea(_this)) ? closeIt(): '';
+            if (!focused_element.is(':input') && !isSetTimeArea(_this)){
+                for(var i= 0, l=focused_element.find('.in_txt:visible').length; i<l; i++){
+                    if(focused_element.find('.in_txt:visible')[i].value!== 'AM' && focused_element.find('.in_txt:visible')[i].value!=='PM'){
+                        if(focused_element.find('.in_txt:visible')[i].value!==undefined){
+                            $(focused_element.find('.in_txt:visible')[i]).val((addZero(parseInt(focused_element.find('.in_txt:visible')[i].value))));
+                        }
+                    }
+                }
+                focused_element.find('.timepicker_wrap:visible')[0] !==undefined ? setValue($(focused_element.find('.timepicker_wrap:visible')[0].parentElement).find('.timepicker'),  $(focused_element.find('.in_txt:visible'))): '';
+                closeIt();
+            }
         }, 0);
     });
     $('.prev').on('click', function(e){
