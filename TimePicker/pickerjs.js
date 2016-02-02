@@ -85,7 +85,11 @@ function setInit(inputbox){
     }
 }
 function isSetTimeArea(dom){
-    return $.contains($('body').find('.timepicker_wrap')[0],dom)|| $inputbox.is(dom);
+    var open=false;
+    if($('body').find('.timepicker_wrap')[1] !==undefined)
+        open=$.contains($('body').find('.timepicker_wrap')[0],dom)|| $.contains($('body').find('.timepicker_wrap')[1],dom)
+    else open=$.contains($('body').find('.timepicker_wrap')[0],dom)
+    return open;
 }
 function setValue(inputbox, area){
     area.eq(3).val()===undefined ?
