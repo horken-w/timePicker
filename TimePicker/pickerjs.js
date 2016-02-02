@@ -67,7 +67,7 @@ function addZero(i, hours) {
     }
     else{
         if(i>59) i=0;
-        else if(i < 1) i=59;
+        else if(i < 0) i=59;
     }
     if (i < 10) {
         i = "0" + i;
