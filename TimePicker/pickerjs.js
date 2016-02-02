@@ -1,4 +1,4 @@
-var tz='AM', $inputbox=$('.timepicker');
+var twintyfour=true, $inputbox=$('.timepicker');
 
 var setTimearea=function(meridian){
     var $div=$('<div/>'), $input=$('<input type="text"/>');
@@ -11,6 +11,7 @@ var setTimearea=function(meridian){
         $div.clone().addClass('btn next').appendTo('.'+lists[i]);
     }
     if(meridian){
+        twintyfour=false;
         $div.clone().addClass('meridian').appendTo('.timepicker_wrap');
         $div.clone().addClass('btn prev').appendTo('.meridian');
         $div.clone().addClass('ti_tx').append($input.clone().addClass('in_txt')).appendTo('.meridian');
@@ -62,6 +63,7 @@ function addZero(i, hours) {
     if(hours){
         if(i>24) i=1;
         else if (i<1) i=24;
+        !twintyfour ? i>12 ? i-=12 : '':'';
     }
     else{
         if(i>59) i=0;
@@ -74,7 +76,7 @@ function addZero(i, hours) {
 }
 function setInit(inputbox){
     var $area=$(inputbox[0].nextElementSibling).find('.in_txt');
-    var date=new Date();
+    var date=new Date(), tz='AM';
     var list=[addZero(date.getHours(), true), addZero(date.getMinutes()), addZero(date.getSeconds()), tz];
     if(inputbox.val().length===0){
         for(var i=0; i<$area.length; i++)	$($area[i]).val(list[i]);
