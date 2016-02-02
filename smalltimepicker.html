@@ -1,94 +1,94 @@
 <!DOCTYPE html>
 <html>
   <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<style>
-	body{
-		width: 80%;
-		position: relative;
-	}
-	  #timepicker{
-	  	width: 20%;
-	  	margin: 30px 40%;
-	  	margin-bottom: 0;
-	  	position: absolute;
-	  }
-	  .timepicker_wrap{
-	  	top: 60px;
-	  	left: 39%;
-		display: none;
-		position: absolute;
-		background: hsl(0, 0%, 100%);
-	  	border-radius: 5px;
-	  }
-	  .hour, .min, .meridian, .sec{
-	  	float: left;
-	  	width: 60px;
-	  	margin: 0 10px;
-	  }
-	  .timepicker_wrap .btn{
-	  	background: url(arrow.png) no-repeat;
-	  	cursor: pointer;
-	  	padding: 18px;
-	  	border: 3px dotted hsl(120, 40%, 80%);
-	  	width: 28%;
-	  	margin: auto;
-	  	border-radius: 5px;
-	  }
-	  .timepicker_wrap .prev{
-	  	background-position: 50% -50%;
-	  }
-	  .timepicker_wrap .next{
-	  	background-position: 50% 150%;
-	  }
-	  .timepicker_wrap .ti_tx{
-	  	margin: 10px 0;
-	  	width: 100%;
-	  	text-align: center;
-	  }
-	  .timepicker_wrap .in_txt{
-	  	border-radius: 10px;
-	  	width: 70%;
-	  	float: none;
-	  	text-align: center;
-	  	padding-bottom: 8px;
-	  	border: 2px solid hsl(0, 0%, 0%);
-	  	font-family: georgia, helvetica, arial;
-	  	font-weight: 700;
-	  	font-size: 1.5em;
-	  }
-		.timepicker_wrap > .hour > .ti_tx:after{
-		    content: '時';
-		    font-size: 1em;
-		    padding-left: 0.2em;
-		    font-weight: 700;
-		}
-		.timepicker_wrap >.min > .ti_tx:after{
-		    content: '分';
-		    font-size: 1em;
-		    padding-left: 0.2em;
-		    font-weight: 700;
-		}
-		.timepicker_wrap > .sec > .ti_tx:after{
-		    content: '秒';
-		    font-size: 1em;
-		    padding-left: 0.2em;
-		    font-weight: 700;
-		}
-		.timepicker_wrap > .meridian > .ti_tx:after{
-		    content: '區';
-		    font-size: 1em;
-		    padding-left: 0.2em;
-		    font-weight: 700;
-		}
-	</style>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title></title>
+  <style>
+    body{
+      width: 80%;
+      position: relative;
+    }
+    #timepicker{
+      width: 20%;
+      margin: 30px 40%;
+      margin-bottom: 0;
+      position: absolute;
+    }
+   .timepicker_wrap{
+      top: 60px;
+      left: 39%;
+      display: none;
+      position: absolute;
+      background: hsl(0, 0%, 100%);
+      border-radius: 5px;
+    }
+    .hour, .min, .meridian, .sec{
+      float: left;
+      width: 60px;
+      margin: 0 10px;	
+    }
+    .timepicker_wrap .btn{
+      background: url(arrow.png) no-repeat;
+      cursor: pointer;
+      padding: 18px;
+      border: 3px dotted hsl(120, 40%, 80%);
+      width: 28%;
+      margin: auto;
+      border-radius: 5px;
+    }
+    .timepicker_wrap .prev{
+      background-position: 50% -50%;
+    }
+    .timepicker_wrap .next{
+      background-position: 50% 150%;
+    }
+    .timepicker_wrap .ti_tx{
+      margin: 10px 0;
+      width: 100%;
+      text-align: center;
+    }
+    .timepicker_wrap .in_txt{
+      border-radius: 10px;
+      width: 70%;
+      float: none;
+      text-align: center;
+      padding-bottom: 8px;
+      border: 2px solid hsl(0, 0%, 0%);
+      font-family: georgia, helvetica, arial;
+      font-weight: 700;
+      font-size: 1.5em;
+    }
+    .timepicker_wrap > .hour > .ti_tx:after{
+      content: '時';
+      font-size: 1em;
+      padding-left: 0.2em;
+      font-weight: 700;
+    }
+    .timepicker_wrap >.min > .ti_tx:after{
+      content: '分';
+      font-size: 1em;
+      padding-left: 0.2em;
+      font-weight: 700;
+    }
+    .timepicker_wrap > .sec > .ti_tx:after{
+      content: '秒';
+      font-size: 1em;
+      padding-left: 0.2em;
+      font-weight: 700;
+    }
+    .timepicker_wrap > .meridian > .ti_tx:after{
+      content: '區';
+      font-size: 1em;
+      padding-left: 0.2em;
+      font-weight: 700;
+    }
+  </style>
   </head>
   <body>
-  	<span>Now you can click the input box to Setup the time: </span>
+    <span>Now you can click the input box to Setup the time: </span>
     <input type="text" class="timepicker" name="open" readonly>
-	<script src="https://dl.dropboxusercontent.com/u/50502234/jquery.min.js"></script>
-	<script src="js.js"></script>
+    <script src="https://dl.dropboxusercontent.com/u/50502234/jquery.min.js"></script>
+    <script src="js.js"></script>
   </body>
 </html>
