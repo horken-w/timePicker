@@ -6,7 +6,7 @@ TimpePicker Plugin for jQuery
 Write your Input DOM with class .timepicker like so:
 
 ```html
-  <label class="col-md-2 control-label" ><font color="red">*</font>Wake Up Time :?</a></label>
+  <label class="col-md-2 control-label" ><font color="red">*</font>Wake Up Time :?</label>
   <input class="form-control space" type="text" class="timepicker" name="timepicker" readonly> // input box here
   <br/>
   //import timepicker after Jquery Libary
@@ -34,6 +34,6 @@ I will show the differences follow:<br/>
 2016/02/01 add 12 or 24 hour sections selected<br/>
 
 #### Suggests & Questions
-open for suggest and question welcome! [Contact me](horkenwong@gmail.com)
+open for suggest and question welcome! [Contact me](mailto:horkenwong@gmail.com "horken")
 
 Copyright © 2016 Horken Wong | WTFPL & MIT license
