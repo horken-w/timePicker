@@ -29,8 +29,11 @@ I will show the differences follow:<br/>
 
 
 ###Update: 
-2016/12/30 Support multi-Inputbox select
-2016/01/15 touch to manually set time
-2016/02/01 add 12 or 24 hour sections selected
+2016/12/30 Support multi-Inputbox select<br/>
+2016/01/15 touch to manually set time<br/>
+2016/02/01 add 12 or 24 hour sections selected<br/>
+
+#### Suggests & Questions
+open for suggest and question welcome! [Contact me](horkenwong@gmail.com)
 
 Copyright © 2016 Horken Wong | WTFPL & MIT license
