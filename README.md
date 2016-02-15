@@ -25,7 +25,7 @@ I will show the differences follow:<br/>
 ![File Input Screenshot](http://w1.loxa.edu.tw/xxxeee/timepicker2.jpg)
 
 ◎ without meridian(false)： You are not able to see the AM/PM at the end of area, only show until second select.
-![File Input Screenshot](http://w1.loxa.edu.tw/xxxeee/timepicke.jpg)
+![File Input Screenshot](http://w1.loxa.edu.tw/xxxeee/timepicker.jpg)
 
 
 ###Update: 
